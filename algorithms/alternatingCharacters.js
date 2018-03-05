@@ -9,4 +9,3 @@ function alternatingCharacters(s){
   }
   return remove
 }
-
