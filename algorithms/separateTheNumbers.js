@@ -1,20 +1,31 @@
 //https://www.hackerrank.com/challenges/separate-the-numbers/problem
 
-function findNumbers(s) {
+function separateNumbers(s) {
   
-  for (let i = 0; i < s.length; i++) {
-    if (Number(s[i]) < Number(s[i+1]) && Number(s[i])+1 === Number(s[i+1])) {
-      if (check)
-    } 
+  //Check if the first added by one equals the next number
+  //check the length of the added number and then check the next numbers in the string match the length
+  //
+  
+  var firstNum = (Number(s[0])+1).toString() 
+
+  for(let i = 1; i < firstNum.length; i++){
+    
   }
   
-}
-
-function separateNumbers(s) {
   var arr = []
   
-  if (findNumbers(s)) arr.push(findNumbers(s))
-  else return 'NO'
+  var i = 0
+  
+  for(let i = 0; i < s.length; i++){
+    
+  }
+  
+  while (i < arr.length) {
+    if (arr[i] < arr[i+1]) i++
+    else return separateNumbers(s.split(''))
+    return 'NO'
+  }
+  
   
   return `YES ${arr[0]}`
 }
