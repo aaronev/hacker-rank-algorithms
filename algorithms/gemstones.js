@@ -1,26 +1,25 @@
 //https://www.hackerrank.com/challenges/gem-stones/problem
 
-function gemstones(arr){
-  var allGems = []
-    for (let i = 0; i < arr.length; i++) {
-      allGems.push(arr[i].split('').sort())
-    }
-  
-  var shortest = allGems.map(el => el.length).reduce((a,b) => Math.min(a,b))
-  var short = allGems.map(el => el.length)
-  var shortIn = short.indexOf(shortest)
-  
-  var j = 0
-  var res = 0
-  
-  while (j < shortest) {
-    var haveIt = 0
-    for (let i = 0; i < allGems.length; i++) {
-      if (allGems[i].includes(allGems[shortIn][j])) haveIt++
-    }
-    if (haveIt === allGems.length) res++
-    j++
-  }
+//passes all test
 
-  return res
+function gemstones(arr){
+  var gemstones = 0
+  var lengthArr = arr.map(el => el.length)
+  var leastL= lengthArr.reduce((el1, el2) => Math.min(el1, el2))
+  var lstInd = lengthArr.indexOf(leastL)
+  
+  var lettersOnce = arr[lstInd].split('').filter((el, index, self) => {
+    if (index === self.indexOf(el)) return el
+  })
+    
+  for (let i = 0; i < lettersOnce.length; i++) {
+    var res = 0
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[j].split('').includes(lettersOnce[i])) res++
+    }
+    if (res === arr.length) gemstones++
+  }
+  
+  return gemstones
+  
 }
