@@ -4,7 +4,6 @@ function separateNumbers(s) {
   
   //Check if the first added by one equals the next number
   //Check the length of the added number and then check the next numbers in the string match the length
-  //
   
   var firstNum = Number(s[0]) 
   var fNumLen = firstNum.toString().length
