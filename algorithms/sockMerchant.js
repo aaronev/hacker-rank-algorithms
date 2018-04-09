@@ -8,6 +8,7 @@ function findMatching(val, arr) {
 }
 
 function sockMerchant(n, ar) {
+  //add another step
   //take the first value in the array
   //check to see if this value in the array exist
   //if it does then push it in a new array
