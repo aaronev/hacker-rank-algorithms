@@ -1,26 +1,25 @@
 // https://www.hackerrank.com/challenges/sock-merchant/problem
 
-function findMatching(val, arr) {
-  for(let i = 0; i < arr.length; i++) {
-    if (val === arr[i]) return val
-  }
-  return false
-}
+// Passes all Test
 
 function sockMerchant(n, ar) {
-  //add another step
-  //take the first value in the array
-  //check to see if this value in the array exist
-  //if it does then push it in a new array
-  //remove the values that were paired 
-  //move on to the next value of the array
-  var match = []
+//put all values into an object
+//then count each object
+//if object key value is even then divide by two and it is a pair
+
+  var socks = {}
   
-  for(let i = 0; i < ar.length; i++) {
-    if (findMatching(ar[i], ar) && !match.includes(ar[i])) {
-      match.push(findMatching(ar[0], ar[i]))
-    }
+  for (let i = 0; i < ar.length; i++) {
+    if (!socks[ar[i]]) socks[ar[i]] = 0
+    socks[ar[i]]++
   }
   
-  return match.length
+  var res = 0
+  
+  for (let sock in socks) {
+    if (socks[sock] % 2 === 0) res += (socks[sock]/2)
+    if (socks[sock] % 2 === 1) res += ((socks[sock] - 1)/2)
+  }
+  
+  return res
 }
