@@ -32,4 +32,6 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
      //it lands on sams house
      //figure out how to get the answer
 
+     //still in progress
+
 }
