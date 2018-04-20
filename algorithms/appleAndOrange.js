@@ -16,8 +16,12 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
   //if a + apples[i] > s and < t aOnHouse ++ 
   //if b + oranges[i] >s and < t bOnHouse ++
 
-  for (let i = 0; i < a.length; i++) {
-    
+  for (let i = 0; i < apples.length; i++) {
+
   }
   
+  for (let i = 0; i < oranges.length; i++) {
+
+  }
+
 }
