@@ -4,5 +4,8 @@ function isWinning(n, config) {
     /*
      * Return WIN or LOSE depending on whether you will win
      */
+ if () return 'WIN'
 
+ if () return 'LOSE'
+  
 }
