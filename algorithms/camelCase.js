@@ -1,5 +1,7 @@
 // https://www.hackerrank.com/challenges/camelcase/problem
 
+//Pass
+
 function camelcase(s) {
   var res = 1
   var cap = [
