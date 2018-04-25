@@ -9,7 +9,7 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
     var pos = a + apples[i]
     if (pos >= s && pos <= t) apps++
   }
-  //just for commit ticks
+
   for (let i = 0; i < oranges.length; i++) {
     var pos = b + oranges[i]
     if (pos >= s && pos <= t) ors++
