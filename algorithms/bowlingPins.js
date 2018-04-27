@@ -6,6 +6,6 @@ function isWinning(n, config) {
      */
  if ('somecondition') return 'WIN'
 
- if () return 'LOSE'
+ if ('anothercondition') return 'LOSE'
   
 }
