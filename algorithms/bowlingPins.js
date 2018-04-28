@@ -7,5 +7,7 @@ function isWinning(n, config) {
  if ('somecondition') return 'WIN'
 
  if ('anothercondition') return 'LOSE'
+
+ 	//testint to see if this pushes up
   
 }
