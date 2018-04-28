@@ -1,5 +1,7 @@
 //https://www.hackerrank.com/challenges/reduced-string/problem
 
+//Passes 
+
 function super_reduced_string(s){
   
   var arr = s.split('')
