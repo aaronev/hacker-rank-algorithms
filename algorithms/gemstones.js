@@ -20,6 +20,7 @@ function gemstones(arr){
     if (res === arr.length) gemstones++
   }
   
+  //add line for contribution ticks
   return gemstones
   
 }
