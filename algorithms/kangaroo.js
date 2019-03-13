@@ -28,9 +28,10 @@ function readLine() {
 
 // Complete the kangaroo function below.
 function kangaroo(x1, v1, x2, v2) {
-    var k1 = (x1 * 1)*v1
-    var k2 = (x2 * 2)*v2
-    return (k1===k2) ? 'YES': 'NO'
+    var k1 = x1 + v1;
+    var k2 = x2 + v2;
+    var v = k1 / k2;
+    return (v % 0 === 0) ? 'YES': 'NO'
 }
 
 function main() {
