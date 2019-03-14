@@ -28,7 +28,7 @@ function readLine() {
  * Complete the maximumDraws function below.
  */
 function maximumDraws(n) {
-    
+    return n+1
 }
 
 function main() {
